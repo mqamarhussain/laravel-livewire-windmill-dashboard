@@ -11,7 +11,7 @@
             <table class="w-full whitespace-no-wrap">
                 <thead>
                     <tr
-                        class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                        class="text-xs font-semibold tracking-wide ltr:text-left rtl:text-right text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                         <th class="px-4 py-3">Client</th>
                         <th class="px-4 py-3">Amount</th>
                         <th class="px-4 py-3">Status</th>
@@ -23,7 +23,7 @@
                         <td class="px-4 py-3">
                             <div class="flex items-center text-sm">
                                 <!-- Avatar with inset shadow -->
-                                <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                <div class="relative hidden w-8 h-8 ltr:mr-3 rtl:ml-3 rounded-full md:block">
                                     <img class="object-cover w-full h-full rounded-full"
                                         src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
                                         alt="" loading="lazy" />
@@ -55,7 +55,7 @@
                         <td class="px-4 py-3">
                             <div class="flex items-center text-sm">
                                 <!-- Avatar with inset shadow -->
-                                <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                <div class="relative hidden w-8 h-8 ltr:mr-3 rtl:ml-3 rounded-full md:block">
                                     <img class="object-cover w-full h-full rounded-full"
                                         src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&facepad=3&fit=facearea&s=707b9c33066bf8808c934c8ab394dff6"
                                         alt="" loading="lazy" />
@@ -87,7 +87,7 @@
                         <td class="px-4 py-3">
                             <div class="flex items-center text-sm">
                                 <!-- Avatar with inset shadow -->
-                                <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                <div class="relative hidden w-8 h-8 ltr:mr-3 rtl:ml-3 rounded-full md:block">
                                     <img class="object-cover w-full h-full rounded-full"
                                         src="https://images.unsplash.com/photo-1551069613-1904dbdcda11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
                                         alt="" loading="lazy" />
@@ -119,7 +119,7 @@
                         <td class="px-4 py-3">
                             <div class="flex items-center text-sm">
                                 <!-- Avatar with inset shadow -->
-                                <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                <div class="relative hidden w-8 h-8 ltr:mr-3 rtl:ml-3 rounded-full md:block">
                                     <img class="object-cover w-full h-full rounded-full"
                                         src="https://images.unsplash.com/photo-1551006917-3b4c078c47c9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
                                         alt="" loading="lazy" />
@@ -151,7 +151,7 @@
                         <td class="px-4 py-3">
                             <div class="flex items-center text-sm">
                                 <!-- Avatar with inset shadow -->
-                                <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                <div class="relative hidden w-8 h-8 ltr:mr-3 rtl:ml-3 rounded-full md:block">
                                     <img class="object-cover w-full h-full rounded-full"
                                         src="https://images.unsplash.com/photo-1546456073-6712f79251bb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
                                         alt="" loading="lazy" />
@@ -183,7 +183,7 @@
                         <td class="px-4 py-3">
                             <div class="flex items-center text-sm">
                                 <!-- Avatar with inset shadow -->
-                                <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                <div class="relative hidden w-8 h-8 ltr:mr-3 rtl:ml-3 rounded-full md:block">
                                     <img class="object-cover w-full h-full rounded-full"
                                         src="https://images.unsplash.com/photo-1502720705749-871143f0e671?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=b8377ca9f985d80264279f277f3a67f5"
                                         alt="" loading="lazy" />
@@ -215,7 +215,7 @@
                         <td class="px-4 py-3">
                             <div class="flex items-center text-sm">
                                 <!-- Avatar with inset shadow -->
-                                <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                <div class="relative hidden w-8 h-8 ltr:mr-3 rtl:ml-3 rounded-full md:block">
                                     <img class="object-cover w-full h-full rounded-full"
                                         src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
                                         alt="" loading="lazy" />
@@ -247,7 +247,7 @@
                         <td class="px-4 py-3">
                             <div class="flex items-center text-sm">
                                 <!-- Avatar with inset shadow -->
-                                <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                <div class="relative hidden w-8 h-8 ltr:mr-3 rtl:ml-3 rounded-full md:block">
                                     <img class="object-cover w-full h-full rounded-full"
                                         src="https://images.unsplash.com/photo-1566411520896-01e7ca4726af?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
                                         alt="" loading="lazy" />
@@ -279,7 +279,7 @@
                         <td class="px-4 py-3">
                             <div class="flex items-center text-sm">
                                 <!-- Avatar with inset shadow -->
-                                <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                <div class="relative hidden w-8 h-8 ltr:mr-3 rtl:ml-3 rounded-full md:block">
                                     <img class="object-cover w-full h-full rounded-full"
                                         src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
                                         alt="" loading="lazy" />
@@ -380,7 +380,11 @@
             </span>
         </div>
     </div>
-
+    <div>
+        <button wire:click='showModal()' class="px-4 py-2 text-sm font-medium leading-5 text-white transition">
+            Open modal
+        </button>
+    </div>
     <!-- Charts -->
     <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
         Charts

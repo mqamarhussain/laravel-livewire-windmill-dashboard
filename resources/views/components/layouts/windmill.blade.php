@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html :class="{ dark }" x-data="data()" lang="en">
+<html :class="{ dark }" x-data="data()" lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,18 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+</head>
+
+<body x-cloak>
+    <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen }">
+        @include('components.windmill.sidebar')
+        <div class="flex flex-col flex-1 w-full">
+            @include('components.windmill.header')
+            <main class="h-full overflow-y-auto">
+                {{ $slot }}
+            </main>
+        </div>
+    </div>
     <script>
         function data() {
             function getThemeFromLocalStorage() {
@@ -39,24 +51,6 @@
                 },
                 closeSideMenu() {
                     this.isSideMenuOpen = false
-                },
-                isNotificationsMenuOpen: false,
-                toggleNotificationsMenu() {
-                    this.isNotificationsMenuOpen = !this.isNotificationsMenuOpen
-                },
-                closeNotificationsMenu() {
-                    this.isNotificationsMenuOpen = false
-                },
-                isProfileMenuOpen: false,
-                toggleProfileMenu() {
-                    this.isProfileMenuOpen = !this.isProfileMenuOpen
-                },
-                closeProfileMenu() {
-                    this.isProfileMenuOpen = false
-                },
-                isPagesMenuOpen: false,
-                togglePagesMenu() {
-                    this.isPagesMenuOpen = !this.isPagesMenuOpen
                 },
                 // Modal
                 isModalOpen: false,
@@ -123,20 +117,6 @@
             }
         }
     </script>
-</head>
-
-<body x-cloak>
-    <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen }">
-        @include('components.windmill.sidebar')
-        <div class="flex flex-col flex-1 w-full">
-            @include('components.windmill.header')
-            <main class="h-full overflow-y-auto">
-                {{ $slot }}
-            </main>
-        </div>
-    </div>
-
-
 </body>
 
 </html>
