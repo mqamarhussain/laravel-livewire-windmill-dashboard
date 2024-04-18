@@ -4,7 +4,31 @@
     </h2>
 
     @include('components.windmill.cards.cards')
+    <!-- Modal -->
+    <div>
+        <x-input.button-primary wire:click='showModal()' wire:loading.class="opacity-50">
+            Open modal
+        </x-input.button-primary>
+        <x-input.modal title="My Modal Title" wire:model="openModal">
 
+            <x-slot name="content">
+                <div>
+                    <p class="text-sm text-gray-700 dark:text-gray-400">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum et
+                        eligendi repudiandae voluptatem tempore!
+                    </p>
+                </div>
+            </x-slot>
+            <x-slot name='footer'>
+                <x-input.button-secondary @click="show = false">
+                    Cancel
+                </x-input.button-secondary>
+                <x-input.button-primary>
+                    Accept
+                </x-input.button-primary>
+            </x-slot>
+        </x-input.modal>
+    </div>
     <!-- New Table -->
     <div class="w-full overflow-hidden rounded-lg shadow-xs">
         <div class="w-full overflow-x-auto">
@@ -380,11 +404,7 @@
             </span>
         </div>
     </div>
-    <div>
-        <button wire:click='showModal()' class="px-4 py-2 text-sm font-medium leading-5 text-white transition">
-            Open modal
-        </button>
-    </div>
+
     <!-- Charts -->
     <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
         Charts
