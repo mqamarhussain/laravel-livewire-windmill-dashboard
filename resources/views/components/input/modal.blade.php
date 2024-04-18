@@ -10,11 +10,15 @@
         @keydown.escape="show = false"
         class="w-full px-6 py-4 overflow-hidden bg-white rounded-t-lg dark:bg-gray-800 sm:rounded-lg sm:m-4 sm:max-w-xl"
         role="dialog" id="modal">
-        <header class="flex justify-between">
+        <header @class([
+            'flex',
+            'justify-between' => isset($title),
+            'justify-end' => !isset($title),
+        ])>
             @isset($title)
-                {{ $title }}
-            @else
-                Modal
+                <h2 class="text-gray-700 dark:text-gray-400 font-extrabold">
+                    {{ $title }}
+                </h2>
             @endisset
             <button
                 class="inline-flex items-center justify-center w-6 h-6 text-gray-400 transition-colors duration-150 rounded dark:hover:text-gray-200 hover: hover:text-gray-700"

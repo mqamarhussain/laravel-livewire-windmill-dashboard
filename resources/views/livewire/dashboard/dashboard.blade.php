@@ -9,7 +9,7 @@
         <x-input.button-primary wire:click='showModal()' wire:loading.class="opacity-50">
             Open modal
         </x-input.button-primary>
-        <x-input.modal title="My Modal Title" wire:model="openModal">
+        <x-input.modal wire:model="openModal">
 
             <x-slot name="content">
                 <div>
